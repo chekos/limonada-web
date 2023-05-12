@@ -5,95 +5,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>¿qué pasa, calabaza?</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Roboto Mono', monospace, Arial, sans-serif;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- chatgpt example -->
-
-  <h1>Questionnaire</h1>
-  <form id="questionnaireForm" name="morning-checkin">
-    <div class="question" data-question-id="q1">
-      <p>Question 1: How would you rate X?</p>
-      <input type="radio" name="q1" id="q1-1" value="1" />
-      <label class="btn btn-default" for="q1-1">1</label>
-      <input type="radio" name="q1" id="q1-2" value="2" />
-      <label class="btn btn-default" for="q1-2">2</label>
-      <input type="radio" name="q1" id="q1-3" value="3" />
-      <label class="btn btn-default" for="q1-3">3</label>
-      <input type="radio" name="q1" id="q1-4" value="4" />
-      <label class="btn btn-default" for="q1-4">4</label>
-      <input type="radio" name="q1" id="q1-5" value="5" />
-      <label class="btn btn-default" for="q1-5">5</label>
-    </div>
-    <div class="question" data-question-id="q2">
-      <p>Question 2: How would you rate Y?</p>
-      <input type="radio" name="q2" id="q2-1" value="1" />
-      <label class="btn btn-default" for="q2-1">1</label>
-      <input type="radio" name="q2" id="q2-2" value="2" />
-      <label class="btn btn-default" for="q2-2">2</label>
-      <input type="radio" name="q2" id="q2-3" value="3" />
-      <label class="btn btn-default" for="q2-3">3</label>
-      <input type="radio" name="q2" id="q2-4" value="4" />
-      <label class="btn btn-default" for="q2-4">4</label>
-      <input type="radio" name="q2" id="q2-5" value="5" />
-      <label class="btn btn-default" for="q2-5">5</label>
-    </div>
-    <div class="question" data-question-id="q3">
-      <p>Question 3: How would you rate Z?</p>
-      <input type="radio" name="q3" id="q3-1" value="1" />
-      <label class="btn btn-default" for="q3-1">1</label>
-      <input type="radio" name="q3" id="q3-2" value="2" />
-      <label class="btn btn-default" for="q3-2">2</label>
-      <input type="radio" name="q3" id="q3-3" value="3" />
-      <label class="btn btn-default" for="q3-3">3</label>
-      <input type="radio" name="q3" id="q3-4" value="4" />
-      <label class="btn btn-default" for="q3-4">4</label>
-      <input type="radio" name="q3" id="q3-5" value="5" />
-      <label class="btn btn-default" for="q3-5">5</label>
-    </div>
-    <div class="question" data-question-id="q4">
-      <p>Question 4: How would you rate A?</p>
-      <input type="radio" name="q4" id="q4-1" value="1" />
-      <label class="btn btn-default" for="q4-1">1</label>
-      <input type="radio" name="q4" id="q4-2" value="2" />
-      <label class="btn btn-default" for="q4-2">2</label>
-      <input type="radio" name="q4" id="q4-3" value="3" />
-      <label class="btn btn-default" for="q4-3">3</label>
-      <input type="radio" name="q4" id="q4-4" value="4" />
-      <label class="btn btn-default" for="q4-4">4</label>
-      <input type="radio" name="q4" id="q4-5" value="5" />
-      <label class="btn btn-default" for="q4-5">5</label>
-    </div>
-    <div class="question" data-question-id="q5">
-      <p>Question 5: How would you rate B?</p>
-      <input type="radio" name="q5" id="q5-1" value="1" />
-      <label class="btn btn-default" for="q5-1">1</label>
-      <input type="radio" name="q5" id="q5-2" value="2" />
-      <label class="btn btn-default" for="q5-2">2</label>
-      <input type="radio" name="q5" id="q5-3" value="3" />
-      <label class="btn btn-default" for="q5-3">3</label>
-      <input type="radio" name="q5" id="q5-4" value="4" />
-      <label class="btn btn-default" for="q5-4">4</label>
-      <input type="radio" name="q5" id="q5-5" value="5" />
-      <label class="btn btn-default" for="q5-5">5</label>
-    </div>
-
-    <button type="submit">Submit</button>
-  </form>
-  <div id="jsonContainer"></div>
-
-  <script src="script.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+  <h1>¿qué pasa, calabaza?</h1>
 </body>
-<script type="text/javascript">
-  Telegram.WebApp.expand();
-</script>
 
 </html>

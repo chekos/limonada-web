@@ -13,7 +13,11 @@ body {
 
 /* Add new CSS rules for radio buttons */
 
-input {
+input[type="text"] {
+    display: inline-block;
+    width: 80%;
+}
+input[type="radio"] {
     display: none;
 }
 

@@ -101,3 +101,7 @@ button[type="submit"] {
     z-index: 90;
     line-height: 1.8em;
 }
+
+#questionnaireForm {
+  margin: 0.5em;
+}

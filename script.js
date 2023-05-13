@@ -13,8 +13,8 @@ function getAnswers() {
     const question = questionElements[i];
     const questionId = question.getAttribute('data-question-id');
     const questionText = question.querySelector('p:first-child').textContent;
-    const answer = question.querySelector('input[type="radio"]:checked').value;
-    const checkedLabel = question.querySelector('input[type="radio"]:checked + label').textContent;
+    const answer = question.querySelector('input[type="radio"]:checked, input[type="text"]').value;
+    const checkedLabel = question.querySelector('input[type="radio"]:checked + label')?.textContent ?? 'No label selected';
     answers[questionId] = { 'value': answer, 'answer': checkedLabel, 'question': questionText };
   }
 

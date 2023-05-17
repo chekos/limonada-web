@@ -6,7 +6,8 @@ function getAnswers() {
   const date = new Date();
   answers['ts'] = date.getTime();
   answers['local_date'] = date.toString();
-
+  answers['items'] = [];
+  
   // Retrieve the user's selections for each question
   const questionElements = document.getElementsByClassName('question');
   for (let i = 0; i < questionElements.length; i++) {
@@ -15,7 +16,7 @@ function getAnswers() {
     const questionText = question.querySelector('p:first-child').textContent;
     const answer = question.querySelector('input[type="radio"]:checked, input[type="text"]').value;
     const checkedLabel = question.querySelector('input[type="radio"]:checked + label')?.textContent ?? 'No label selected';
-    answers[questionId] = { 'value': answer, 'answer': checkedLabel, 'question': questionText };
+    answers.items.push({ 'questionId': questionId, 'value': answer, 'answer': checkedLabel, 'question': questionText });
   }
 
   // Convert the answers object to JSON

@@ -16,6 +16,7 @@ body {
 input[type="text"] {
     display: inline-block;
     width: 80%;
+    resize: vertical;
 }
 input[type="radio"] {
     display: none;
